@@ -3,7 +3,7 @@ import "./todo.css";
 import TodoList from "./TodoList";
 
 const TodoNew = (props) => {
-      const { data, name, addNewToDo, todoList } = props;
+      const { data, name, addNewToDo, todoList, setValueToDoList } = props;
       const [inputValue, setInputValue] = useState(""); // State để lưu giá trị input
 
       // Hàm xử lý khi nhập dữ liệu vào ô input
@@ -33,6 +33,7 @@ const TodoNew = (props) => {
                         </button>
                         <TodoList
                               todoList={todoList}
+                              setValueToDoList={setValueToDoList}
                         />
                   </div>
             </>

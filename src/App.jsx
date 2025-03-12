@@ -35,6 +35,7 @@ const App = () => {
           data={data}
           addNewToDo={addNewToDo}
           todoList={todoList}
+          setValueToDoList={setValueToDoList}
         />
 
         {todoList.length === 0 ? <img className="logo" src={reactLogo} alt="React Logo" /> :

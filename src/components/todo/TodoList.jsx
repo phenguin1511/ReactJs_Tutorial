@@ -2,8 +2,12 @@ import "./todo.css";
 
 
 const TodoList = (props) => {
-      const { todoList } = props;
+      const { todoList, setValueToDoList } = props;
 
+      const deleteToDo = (id) => {
+            const updateList = todoList.filter(item => item.id !== id);
+            setValueToDoList(updateList);
+      }
       return (
             <>
                   <div className="todo-list">
@@ -16,7 +20,7 @@ const TodoList = (props) => {
                                     return (
                                           <div key={item.id} className="todo-card">
                                                 <div className="todo-item">{item.name}</div>
-                                                <button className="todo-delete">Delete</button>
+                                                <button onClick={() => deleteToDo(item.id)} className="todo-delete">Delete</button>
                                           </div>
                                     )
                               })
