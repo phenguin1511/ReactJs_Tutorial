@@ -6,12 +6,6 @@ import { useState } from "react"
 
 const App = () => {
   const [todoList, setValueToDoList] = useState([
-    {
-      id: 1, name: "Learning React"
-    },
-    {
-      id: 2, name: "Learning NodeJs"
-    }
   ])
   const name = "Nguyễn Phúc"
   const data = {
@@ -42,8 +36,11 @@ const App = () => {
           addNewToDo={addNewToDo}
           todoList={todoList}
         />
-        <div>Learning ReactJS</div>
-        <img className="logo" src={reactLogo} alt="React Logo" />
+
+        {todoList.length === 0 ? <img className="logo" src={reactLogo} alt="React Logo" /> :
+          <div>Learning ReactJS</div>
+        }
+
 
       </div>
     </>
