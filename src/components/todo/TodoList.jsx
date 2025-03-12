@@ -1,12 +1,13 @@
 import "./todo.css";
 
 
-const TodoList = () => {
+const TodoList = (props) => {
+      const { todoList } = props;
       return (
             <>
                   <div className="todo-list">
                         <div className="todo-card">
-                              <div className="todo-item">Learn ReactJS</div>
+                              {JSON.stringify(todoList)}
                               <button className="todo-delete">Delete</button>
                         </div>
                         <div className="todo-card">
