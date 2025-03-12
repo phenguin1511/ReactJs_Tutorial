@@ -10,6 +10,10 @@ const App = () => {
     address: "Biên Hòa",
     phoneNumber: "0337326045"
   }
+
+  const addNewToDo = (name) => {
+    alert(`Hello ${name}`)
+  }
   return (
     <>
       <div className="todo-container">
@@ -17,6 +21,7 @@ const App = () => {
         <TodoNew
           name={name}
           data={data}
+          addNewToDo={addNewToDo}
         />
         <div>Learning ReactJS</div>
         <img className="logo" src={reactLogo} alt="React Logo" />

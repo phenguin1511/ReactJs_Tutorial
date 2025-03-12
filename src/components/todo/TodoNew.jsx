@@ -3,7 +3,11 @@ import TodoList from "./TodoList";
 
 const TodoNew = (props) => {
 
-      const { data, name } = props;
+      const { data, name, addNewToDo } = props;
+
+      const addNewToDoList = () => {
+            addNewToDo('Nguyễn Phúc')
+      }
       return (
             <>
                   <div>
@@ -13,7 +17,7 @@ const TodoNew = (props) => {
                   </div>
                   <div className="todo-form">
                         <input type="text" className="todo-input" />
-                        <button className="todo-button">Add</button>
+                        <button onClick={addNewToDoList} className="todo-button">Add</button>
                         <TodoList />
                   </div>
             </>
