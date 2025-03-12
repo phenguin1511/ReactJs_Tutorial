@@ -3,21 +3,21 @@ import "./todo.css";
 
 const TodoList = (props) => {
       const { todoList } = props;
+
       return (
             <>
                   <div className="todo-list">
-                        <div className="todo-card">
-                              {JSON.stringify(todoList)}
-                              <button className="todo-delete">Delete</button>
-                        </div>
-                        <div className="todo-card">
-                              <div className="todo-item">Learn ReactJS</div>
-                              <button className="todo-delete">Delete</button>
-                        </div>
-                        <div className="todo-card">
-                              <div className="todo-item">Learn ReactJS</div>
-                              <button className="todo-delete">Delete</button>
-                        </div>
+                        {todoList.map((item, index) => {
+                              return (
+                                    <>
+                                          <div className="todo-card">
+                                                <div className="todo-item">{item.name}</div>
+                                                <button className="todo-delete">Delete</button>
+                                          </div>
+                                    </>
+                              )
+                        })}
+
                   </div>
             </>
       );
