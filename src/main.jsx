@@ -6,11 +6,16 @@ import LoginPage from './pages/login.jsx'
 import RegisterPage from './pages/register.jsx'
 import UserPage from './pages/user.jsx'
 import ProductPage from './pages/product.jsx'
+import TodoApp from './components/todo/TodoApp.jsx'
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
     children: [
+      {
+        index: true,
+        element: <TodoApp />
+      },
       {
         path: "/products",
         element: <ProductPage />
@@ -34,7 +39,6 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    {/* <App /> */}
     <RouterProvider router={router} />
   </React.StrictMode>,
 )
