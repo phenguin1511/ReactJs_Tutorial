@@ -9,7 +9,17 @@ import ProductPage from './pages/product.jsx'
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />
+    element: <App />,
+    children: [
+      {
+        path: "/products",
+        element: <ProductPage />
+      },
+      {
+        path: "/users",
+        element: <UserPage />
+      },
+    ]
   },
   {
     path: "/login",
@@ -18,14 +28,6 @@ const router = createBrowserRouter([
   {
     path: "/register",
     element: <RegisterPage />
-  },
-  {
-    path: "/products",
-    element: <ProductPage />
-  },
-  {
-    path: "/users",
-    element: <UserPage />
   },
 
 ])

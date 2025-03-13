@@ -1,5 +1,6 @@
 import './header.css'
 import logo from '../../assets/logo.png'
+import { Link } from 'react-router-dom'; //Thay Link vào thẻ a để không Reload lại trang mỗi khi chuyển 
 const HeaderPage = () => {
       return (
             <header className="header">
@@ -10,9 +11,9 @@ const HeaderPage = () => {
                   </div>
                   <nav className="navigation">
                         <ul>
-                              <li><a href="/">Home</a></li>
-                              <li><a href="/products">Products</a></li>
-                              <li><a href="/users">Users</a></li>
+                              <li><Link to="/">Home</Link></li>
+                              <li><Link to="/products">Products</Link></li>
+                              <li><Link to="/users">Users</Link></li>
                         </ul>
                   </nav>
                   <div className="header-right">

@@ -4,6 +4,7 @@ import reactLogo from "./assets/react.svg"
 import { useState } from "react"
 import HeaderPage from "./components/layouts/header"
 import FooterPage from "./components/layouts/footer"
+import { Outlet } from "react-router-dom"
 const App = () => {
   const [todoList, setValueToDoList] = useState([
   ])
@@ -36,6 +37,7 @@ const App = () => {
           <div>Learning ReactJS</div>
         }
       </div>
+      <Outlet />
       <FooterPage />
     </>
   )
