@@ -7,11 +7,6 @@ import { useState } from "react"
 const App = () => {
   const [todoList, setValueToDoList] = useState([
   ])
-  const name = "Nguyễn Phúc"
-  const data = {
-    address: "Biên Hòa",
-    phoneNumber: "0337326045"
-  }
 
   const randomID = (max, min) => {
     return Math.floor(Math.random() * (max - min + 1) + min);
@@ -31,8 +26,6 @@ const App = () => {
       <div className="todo-container">
         <div className="todo-title">Todo List</div>
         <TodoNew
-          name={name}
-          data={data}
           addNewToDo={addNewToDo}
           todoList={todoList}
           setValueToDoList={setValueToDoList}
