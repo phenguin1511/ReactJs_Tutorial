@@ -2,7 +2,8 @@ import "./components/todo/todo.css"
 import TodoNew from "./components/todo/TodoNew"
 import reactLogo from "./assets/react.svg"
 import { useState } from "react"
-
+import HeaderPage from "./components/layouts/header"
+import FooterPage from "./components/layouts/footer"
 const App = () => {
   const [todoList, setValueToDoList] = useState([
   ])
@@ -22,6 +23,7 @@ const App = () => {
   }
   return (
     <>
+      <HeaderPage />
       <div className="todo-container">
         <div className="todo-title">Todo List</div>
         <TodoNew
@@ -33,9 +35,8 @@ const App = () => {
         {todoList.length === 0 ? <img className="logo" src={reactLogo} alt="React Logo" /> :
           <div>Learning ReactJS</div>
         }
-
-
       </div>
+      <FooterPage />
     </>
   )
 }

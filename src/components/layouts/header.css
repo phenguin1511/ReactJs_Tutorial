@@ -1,0 +1,94 @@
+* {
+      margin : 0;
+      padding: 0;
+}
+
+.header {
+      display         : flex;
+      align-items     : center;
+      padding         : 10px 20px;
+      background-color: #fff;
+      box-shadow      : 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+      height      : 40px;
+      margin-right: 10px;
+}
+
+.navigation ul {
+      display   : flex;
+      list-style: none;
+      margin    : 0;
+      padding   : 0;
+}
+
+.navigation li {
+      margin-right: 20px;
+}
+
+.navigation a {
+      text-decoration: none;
+      color          : #333;
+      font-weight    : 500;
+}
+
+.navigation a:hover {
+      color: #007bff;
+}
+
+.header-right {
+      margin-left: auto;
+      display    : flex;
+      align-items: center;
+}
+
+.search-form {
+      display     : flex;
+      margin-right: 20px;
+}
+
+.search-form input {
+      padding      : 5px 10px;
+      border       : 1px solid #ccc;
+      border-radius: 4px 0 0 4px;
+}
+
+.search-form button {
+      padding         : 5px 10px;
+      border          : 1px solid #ccc;
+      border-left     : none;
+      background-color: #f8f8f8;
+      border-radius   : 0 4px 4px 0;
+      cursor          : pointer;
+}
+
+.search-form button:hover {
+      background-color: #e8e8e8;
+}
+
+.cart-link {
+      margin-right   : 20px;
+      text-decoration: none;
+      color          : #333;
+      display        : flex;
+      align-items    : center;
+}
+
+.cart-link i {
+      margin-right: 5px;
+}
+
+.cart-link:hover {
+      color: #007bff;
+}
+
+.login-link {
+      text-decoration: none;
+      color          : #333;
+      font-weight    : 500;
+}
+
+.login-link:hover {
+      color: #007bff;
+}
