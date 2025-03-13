@@ -1,0 +1,72 @@
+.error-page {
+      min-height      : 100vh;
+      /* Chiếm toàn bộ chiều cao viewport */
+      display         : flex;
+      justify-content : center;
+      align-items     : center;
+      background-color: #f4f4f9;
+      /* Nền sáng nhẹ */
+}
+
+.error-container {
+      text-align      : center;
+      padding         : 40px;
+      background-color: #fff;
+      /* Nền trắng cho container */
+      border-radius   : 10px;
+      box-shadow      : 0 4px 12px rgba(0, 0, 0, 0.1);
+      /* Bóng nhẹ */
+      max-width       : 500px;
+      width           : 100%;
+}
+
+.error-title {
+      font-size    : 48px;
+      color        : #ff4444;
+      /* Màu đỏ nổi bật */
+      margin-bottom: 10px;
+}
+
+.error-subtitle {
+      font-size    : 20px;
+      color        : #666;
+      /* Màu xám nhẹ */
+      margin-bottom: 20px;
+}
+
+.error-icon {
+      font-size    : 60px;
+      color        : #ffbb33;
+      /* Màu vàng cảnh báo */
+      margin-bottom: 20px;
+}
+
+.error-message {
+      font-size       : 16px;
+      color           : #333;
+      /* Màu chữ tối */
+      background-color: #f8d7da;
+      /* Nền hồng nhạt cho thông báo lỗi */
+      padding         : 10px 15px;
+      border-radius   : 5px;
+      margin-bottom   : 30px;
+      word-wrap       : break-word;
+      /* Đảm bảo không tràn chữ */
+}
+
+.error-button {
+      display         : inline-block;
+      padding         : 10px 20px;
+      background-color: #007bff;
+      /* Màu xanh dương */
+      color           : #fff;
+      text-decoration : none;
+      border-radius   : 5px;
+      font-weight     : 500;
+      transition      : background-color 0.3s ease;
+}
+
+.error-button:hover {
+      background-color: #0056b3;
+      /* Màu xanh đậm hơn khi hover */
+}
