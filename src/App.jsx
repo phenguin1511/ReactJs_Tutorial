@@ -1,7 +1,6 @@
 import "./components/todo/todo.css"
 import TodoNew from "./components/todo/TodoNew"
 import reactLogo from "./assets/react.svg"
-import "./App.css"
 import { useState } from "react"
 
 const App = () => {
