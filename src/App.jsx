@@ -3,6 +3,7 @@ import TodoApp from "./components/todo/TodoApp"
 import HeaderPage from "./components/layouts/header"
 import FooterPage from "./components/layouts/footer"
 import { Outlet } from "react-router-dom"
+import './styles/global.css'
 const App = () => {
 
   return (

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import TodoNew from './TodoNew';
-import logo from '../../assets/logo.png'
+
 import reactLogo from '../../assets/react.svg'
 
 const TodoApp = () => {
